@@ -59,3 +59,7 @@ typings/
 
 # next.js build output
 .next
+
+.idea
+test/fixtures/apps/**/run
+test/fixtures/apps/**/logs

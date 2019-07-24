@@ -1,0 +1,62 @@
+{
+  "name": "egg-sticky",
+  "version": "1.0.0",
+  "description": "egg sticky plugin",
+  "eggPlugin": {
+    "name": "sticky"
+  },
+  "files": [
+    "app.js",
+    "agent.js",
+    "lib",
+    "config"
+  ],
+  "keywords": [
+    "egg",
+    "sticky",
+    "websocket"
+  ],
+  "dependencies": {
+    "await-event": "^2.1.0",
+    "cluster-client": "^3.0.1",
+    "sdk-base": "^3.6.0"
+  },
+  "devDependencies": {
+    "autod": "^3.1.0",
+    "egg": "^2.21.1",
+    "egg-bin": "^4.13.0",
+    "egg-ci": "^1.12.0",
+    "egg-mock": "^3.23.1",
+    "eslint": "^6.0.1",
+    "eslint-config-egg": "^7.4.1",
+    "supertest": "^4.0.2",
+    "urllib": "^2.34.0",
+    "utility": "^1.9.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "type": "travis",
+    "version": "8, 10, 12",
+    "license": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggjs/egg-sticky.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eggjs/egg/issues"
+  },
+  "homepage": "https://github.com/eggjs/egg-sticky#readme",
+  "author": "killagu <killa123@126.com>",
+  "license": "MIT"
+}
